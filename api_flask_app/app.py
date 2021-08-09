@@ -33,7 +33,7 @@ def token_required(f):
         return f(*args, **kwargs)
     return decorated
 
-posts_api = api.namespace('Posts', description='Posts APIs')
+posts_api = api.namespace('posts', description='Posts APIs')
 
 posts_model = {
     'id': fields.Integer(required=True),
